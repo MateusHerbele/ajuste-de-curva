@@ -14,10 +14,10 @@ mkdir -p $RESULTS_DIR
 
 # Comandos para execução
 COMMANDS=(
-    "./gera_entrada{K}{N} | ./ajustePol"
-    "./gera_entrada{K}{N} | likwid-perfctr -C 7 -g L3CACHE -m -O ./ajustePol"
-    "./gera_entrada{K}{N} | likwid-perfctr -C 7 -g ENERGY -m -O ./ajustePol"
-    "./gera_entrada{K}{N} | likwid-perfctr -C 7 -g FLOPS_DP -m -O ./ajustePol"
+    "./gera_entrada {K} {N} | ./ajustePol"
+    "./gera_entrada {K} {N} | likwid-perfctr -C 7 -g L3CACHE -m -O ./ajustePol"
+    "./gera_entrada {K} {N} | likwid-perfctr -C 7 -g ENERGY -m -O ./ajustePol"
+    "./gera_entrada {K} {N} | likwid-perfctr -C 7 -g FLOPS_DP -m -O ./ajustePol"
 )
 
 # Função para substituir{K} e{N} nos comandos
