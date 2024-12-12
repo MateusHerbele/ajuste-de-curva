@@ -102,3 +102,107 @@ Socket 0:
 | |                   8 MB                  | |
 | +-----------------------------------------+ |
 +---------------------------------------------+
+
+
+# Primeiro teste feito
+Alterar a função pow por 
+
+double int_pow(double base, int exp){
+    double result = 1.0;
+    while(exp > 0){
+        if (exp % 2 == 1){ // Expoente ímpar
+            result *= base;
+        }
+        base *= base; // Quadrado da base
+        exp /= 2;
+    }
+    return result;
+}
+na montagem do SL montaSl
+	A[i][j] += int_pow(x[k], i+j);
+    b[i] += int_pow(x[k],i) * y[k];
+
+
+Tentando otimizar com base nos expoentes serem inteiros sempre
+
+melhores resultados em tempo e e l3 miss rate e l3 miss rate
+
+Testes com otimização de cache: void montaSL(double **A, double *b, int n, long long int p, double *x, double *y){
+    // Cache das potências de x[k]
+    double **x_powers = (double **)malloc(p * sizeof(double *));
+    for(long long int k = 0; k < p; ++k){
+        x_powers[k] = (double *)malloc((2 * n) * sizeof(double));
+        x_powers[k][0] = 1.0; // x^0 = 1
+        for(int e = 1; e < 2 * n; ++e){
+            x_powers[k][e] = x_powers[k][e - 1] * x[k];
+        }
+    }
+
+    // Construção da matriz A
+    for(int i = 0; i < n; ++i){
+        for(int j = 0; j < n; ++j){
+            A[i][j] = 0.0;
+            for(long long int k = 0; k < p; ++k){
+                A[i][j] += x_powers[k][i + j]; // Usa o cache
+            }
+        }
+    }
+
+    // Construção do vetor b
+    for(int i = 0; i < n; ++i){
+        b[i] = 0.0;
+        for(long long int k = 0; k < p; ++k){
+            b[i] += x_powers[k][i] * y[k]; // Usa o cache
+        }
+    }
+
+    // Liberação da memória do cache
+    for(long long int k = 0; k < p; ++k){
+        free(x_powers[k]);
+    }
+    free(x_powers);
+}
+Não foi satisfatório, resultados com int_pow superiores em todos os aspectos, menos L3 miss ratio que foi levemente menor.
+
+# Matriz pra vetor (mantido)
+Teste de subsituição da forma de represetntar a matriz A
+no lugar de usar uma matriz clássica, vou alocar tudo em um vetor grande e fazer o acesso como se fosse uma matriz
+
+tentar otimizar o cache do programa
+Houve um pequeno aumento nno tempo de execução, quase irrelevante, porém tudo relaciona a cache foi otimizado.
+
+# teste calloc sl (descartado)
+substituir malloc por calloc era uma ideia que tive pois na hora da montagem do sl n seria preciso atribuir valors 0.0, porém o miss ratio aumentou, isso se deve que ao atribuir os valores já é puxado na cache e fica em um espaço mais acessível ao processo.
+
+# teste x,y substituir por um array of struct (descartado)
+Antes de realizar os testes eu já tenho crtz que não será otimizado nada a partir dele. Pelo código é claro que x e y não aparecem juntos com frequencia para que seja melhor trata-los assim.
+
+    typedef struct{
+        double x;
+        double y;
+    } Po
+  Ponto *pontos = (Ponto *) malloc(sizeof(Ponto) * p);
+
+E como esperado, o miss ratio dobrou.
+
+# Unroll
+
+A (mantido): 
+levando em consideração que a linha de cache da maquina usada nesse trabalho é 64 bytes e double é representado por 8 bytes, uma cache line cabe 8 doubles, então farei o unroll com base nisso.
+Como n só será 101 ou 11, n vale usar algo q não seja um divisor comum de ambos, temos 3 opções, 2, 5 e 10.
+2 é muito pequeno para aproveitar o máximo da cache line, 10 é muito grande, passa dela, ent 5 foi escolhido.
+Teve um desempenho melhor em relação a acesso a cache.
+
+B (Mantido):
+B também tem relação de alocação com n então podemos fazer o mesmo unroll com o valor de 5 usado em A.
+Também teve um desempenho melhor em relação ao acesso da cache.
+
+Pequenas otimizações feitas tmb com a variável base e pos para evitar repetição de cálculos. Mesmo que sejam com valores inteiros.
+
+# Inline
+
+Função int pow - > piorou o tempo de execução em 400% (descartado)
+
+# Tentar fazer um mapemamento das linhas da matriz com um vetor auxiliar
+
+Melhorou tanto na perfomance de tempo quanto no request rate da cache
