@@ -1,0 +1,57 @@
+# Executando para K=600, N=10
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU type:	Intel Skylake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+Tempos(K, tSL, tEG):600 5.4689399991e-01 3.2524800021e-01
+--------------------------------------------------------------------------------
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407941647 GHz,
+TABLE,Region SL_MMQ,Group 1 Raw,L3CACHE,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000205,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,2478301
+CPU_CLK_UNHALTED_CORE,FIXC1,831130
+CPU_CLK_UNHALTED_REF,FIXC2,708154
+MEM_LOAD_RETIRED_L3_HIT,PMC0,76
+MEM_LOAD_RETIRED_L3_MISS,PMC1,9
+UOPS_RETIRED_ALL,PMC2,2120951
+TABLE,Region SL_MMQ,Group 1 Metric,L3CACHE,7
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0002,
+Runtime unhalted [s],0.0002,
+Clock [MHz],3999.7551,
+CPI,0.3354,
+L3 request rate,4.007636e-05,
+L3 miss rate,4.243380e-06,
+L3 miss ratio,0.1059,
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407941647 GHz,
+TABLE,Region EG,Group 1 Raw,L3CACHE,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000001,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,9727
+CPU_CLK_UNHALTED_CORE,FIXC1,13147
+CPU_CLK_UNHALTED_REF,FIXC2,10792
+MEM_LOAD_RETIRED_L3_HIT,PMC0,41
+MEM_LOAD_RETIRED_L3_MISS,PMC1,2
+UOPS_RETIRED_ALL,PMC2,12066
+TABLE,Region EG,Group 1 Metric,L3CACHE,7
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.137909e-06,
+Runtime unhalted [s],3.857754e-06,
+Clock [MHz],4151.6131,
+CPI,1.3516,
+L3 request rate,0.0036,
+L3 miss rate,0.0002,
+L3 miss ratio,0.0465,
+# Fim da execução para K=600, N=10

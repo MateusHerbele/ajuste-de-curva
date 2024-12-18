@@ -1,0 +1,85 @@
+# Executando para K=100000, N=1000
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU type:	Intel Skylake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+Tempos(K, tSL, tEG):100000 1.0669263346e+06 8.1882662000e+01
+--------------------------------------------------------------------------------
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula PWR0/time
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula PWR1/time
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula PWR2/time
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula PWR3/time
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula 1.E-06*(FIXC1/FIXC2)/inverseClock
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula FIXC1/FIXC0
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.40777787 GHz,
+TABLE,Region SL_MMQ,Group 1 Raw,ENERGY,8
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000000,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,281474600000000
+CPU_CLK_UNHALTED_CORE,FIXC1,281474800000000
+CPU_CLK_UNHALTED_REF,FIXC2,281474800000000
+TEMP_CORE,TMP0,66
+PWR_PKG_ENERGY,PWR0,244873.3000
+PWR_PP0_ENERGY,PWR1,245719.5000
+PWR_PP1_ENERGY,PWR2,0.0609
+PWR_DRAM_ENERGY,PWR3,261384.6000
+TABLE,Region SL_MMQ,Group 1 Metric,ENERGY,13
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0,
+Runtime unhalted [s],82597.7545,
+Clock [MHz],3407.7779,
+CPI,1.0000,
+Temperature [C],66,
+Energy [J],244873.3000,
+Power [W],0,
+Energy PP0 [J],245719.5000,
+Power PP0 [W],0,
+Energy PP1 [J],0.0609,
+Power PP1 [W],0,
+Energy DRAM [J],261384.6000,
+Power DRAM [W],0,
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.40777787 GHz,
+TABLE,Region EG,Group 1 Raw,ENERGY,8
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.081438,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,0
+CPU_CLK_UNHALTED_CORE,FIXC1,0
+CPU_CLK_UNHALTED_REF,FIXC2,0
+TEMP_CORE,TMP0,71
+PWR_PKG_ENERGY,PWR0,2.8002
+PWR_PP0_ENERGY,PWR1,2.6992
+PWR_PP1_ENERGY,PWR2,0
+PWR_DRAM_ENERGY,PWR3,0.0887
+TABLE,Region EG,Group 1 Metric,ENERGY,13
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0814,
+Runtime unhalted [s],0,
+Clock [MHz],0,
+CPI,0,
+Temperature [C],71,
+Energy [J],2.8002,
+Power [W],34.3850,
+Energy PP0 [J],2.6992,
+Power PP0 [W],33.1439,
+Energy PP1 [J],0,
+Power PP1 [W],0,
+Energy DRAM [J],0.0887,
+Power DRAM [W],1.0890,
+# Fim da execução para K=100000, N=1000

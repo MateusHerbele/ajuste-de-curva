@@ -1,0 +1,61 @@
+# Executando para K=7000, N=1000
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU type:	Intel Skylake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+Tempos(K, tSL, tEG):7000 7.4228445726e+04 8.5210393000e+01
+--------------------------------------------------------------------------------
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407971223 GHz,
+TABLE,Region SL_MMQ,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],74.228680,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,477300000000
+CPU_CLK_UNHALTED_CORE,FIXC1,295015300000
+CPU_CLK_UNHALTED_REF,FIXC2,251384900000
+FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE,PMC0,0
+FP_ARITH_INST_RETIRED_SCALAR_DOUBLE,PMC1,117805500000
+FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE,PMC2,0
+TABLE,Region SL_MMQ,Group 1 Metric,FLOPS_DP,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],74.2287,
+Runtime unhalted [s],86.5663,
+Clock [MHz],3999.4592,
+CPI,0.6181,
+DP [MFLOP/s],1587.0618,
+AVX DP [MFLOP/s],0,
+Packed [MUOPS/s],0,
+Scalar [MUOPS/s],1587.0618,
+Vectorization ratio [%],0,
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407971223 GHz,
+TABLE,Region EG,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.084818,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,539133000
+CPU_CLK_UNHALTED_CORE,FIXC1,333094100
+CPU_CLK_UNHALTED_REF,FIXC2,284194800
+FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE,PMC0,500500
+FP_ARITH_INST_RETIRED_SCALAR_DOUBLE,PMC1,3003511
+FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE,PMC2,166541500
+TABLE,Region EG,Group 1 Metric,FLOPS_DP,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0848,
+Runtime unhalted [s],0.0977,
+Clock [MHz],3994.3557,
+CPI,0.6178,
+DP [MFLOP/s],7901.2993,
+AVX DP [MFLOP/s],7854.0862,
+Packed [MUOPS/s],1969.4224,
+Scalar [MUOPS/s],35.4113,
+Vectorization ratio [%],98.2337,
+# Fim da execução para K=7000, N=1000

@@ -1,0 +1,61 @@
+# Executando para K=512, N=10
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU type:	Intel Skylake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+Tempos(K, tSL, tEG):512 1.4306259993e+00 4.2810299993e-01
+--------------------------------------------------------------------------------
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.412323343 GHz,
+TABLE,Region SL_MMQ,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.001086,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,9060851
+CPU_CLK_UNHALTED_CORE,FIXC1,4329761
+CPU_CLK_UNHALTED_REF,FIXC2,3689018
+FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE,PMC0,0
+FP_ARITH_INST_RETIRED_SCALAR_DOUBLE,PMC1,4133386
+FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE,PMC2,0
+TABLE,Region SL_MMQ,Group 1 Metric,FLOPS_DP,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0011,
+Runtime unhalted [s],0.0013,
+Clock [MHz],4005.0074,
+CPI,0.4779,
+DP [MFLOP/s],3806.3519,
+AVX DP [MFLOP/s],0,
+Packed [MUOPS/s],0,
+Scalar [MUOPS/s],3806.3519,
+Vectorization ratio [%],0,
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.412323343 GHz,
+TABLE,Region EG,Group 1 Raw,FLOPS_DP,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000001,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,8473
+CPU_CLK_UNHALTED_CORE,FIXC1,14976
+CPU_CLK_UNHALTED_REF,FIXC2,12780
+FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE,PMC0,56
+FP_ARITH_INST_RETIRED_SCALAR_DOUBLE,PMC1,346
+FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE,PMC2,152
+TABLE,Region EG,Group 1 Metric,FLOPS_DP,9
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.048074e-06,
+Runtime unhalted [s],4.388799e-06,
+Clock [MHz],3998.6662,
+CPI,1.7675,
+DP [MFLOP/s],1017.1038,
+AVX DP [MFLOP/s],580.1117,
+Packed [MUOPS/s],198.4593,
+Scalar [MUOPS/s],330.1294,
+Vectorization ratio [%],37.5451,
+# Fim da execução para K=512, N=10

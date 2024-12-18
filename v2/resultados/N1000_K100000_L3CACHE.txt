@@ -1,0 +1,67 @@
+# Executando para K=100000, N=1000
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU type:	Intel Skylake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+Tempos(K, tSL, tEG):100000 1.0624637695e+06 8.4705396000e+01
+--------------------------------------------------------------------------------
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula 1.E-06*(FIXC1/FIXC2)/inverseClock
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula FIXC1/FIXC0
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula (PMC0+PMC1)/PMC2
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula PMC1/PMC2
+ERROR - [/home/herbele/Downloads/likwid-5.4.0/src/perfmon.c:perfmon_getMetricOfRegionThread:4038] Success.
+Cannot calculate formula PMC1/(PMC0+PMC1)
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407953927 GHz,
+TABLE,Region SL_MMQ,Group 1 Raw,L3CACHE,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000000,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,281474600000000
+CPU_CLK_UNHALTED_CORE,FIXC1,281474800000000
+CPU_CLK_UNHALTED_REF,FIXC2,281474800000000
+MEM_LOAD_RETIRED_L3_HIT,PMC0,281475000000000
+MEM_LOAD_RETIRED_L3_MISS,PMC1,281475000000000
+UOPS_RETIRED_ALL,PMC2,281474500000000
+TABLE,Region SL_MMQ,Group 1 Metric,L3CACHE,7
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0,
+Runtime unhalted [s],82593.4875,
+Clock [MHz],3407.9539,
+CPI,1.0000,
+L3 request rate,2.0000,
+L3 miss rate,1.0000,
+L3 miss ratio,0.5000,
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407953927 GHz,
+TABLE,Region EG,Group 1 Raw,L3CACHE,6
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.084309,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,0
+CPU_CLK_UNHALTED_CORE,FIXC1,0
+CPU_CLK_UNHALTED_REF,FIXC2,0
+MEM_LOAD_RETIRED_L3_HIT,PMC0,0
+MEM_LOAD_RETIRED_L3_MISS,PMC1,0
+UOPS_RETIRED_ALL,PMC2,0
+TABLE,Region EG,Group 1 Metric,L3CACHE,7
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0843,
+Runtime unhalted [s],0,
+Clock [MHz],0,
+CPI,0,
+L3 request rate,0,
+L3 miss rate,0,
+L3 miss ratio,0,
+# Fim da execução para K=100000, N=1000

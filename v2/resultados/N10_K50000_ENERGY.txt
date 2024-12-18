@@ -1,0 +1,73 @@
+# Executando para K=50000, N=10
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+CPU type:	Intel Skylake processor
+CPU clock:	3.41 GHz
+--------------------------------------------------------------------------------
+Tempos(K, tSL, tEG):50000 1.8114584001e+01 4.0385000035e-01
+--------------------------------------------------------------------------------
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407959894 GHz,
+TABLE,Region SL_MMQ,Group 1 Raw,ENERGY,8
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.017636,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,206007200
+CPU_CLK_UNHALTED_CORE,FIXC1,69140920
+CPU_CLK_UNHALTED_REF,FIXC2,58935680
+TEMP_CORE,TMP0,55
+PWR_PKG_ENERGY,PWR0,0.4421
+PWR_PP0_ENERGY,PWR1,0.4100
+PWR_PP1_ENERGY,PWR2,0
+PWR_DRAM_ENERGY,PWR3,0.0180
+TABLE,Region SL_MMQ,Group 1 Metric,ENERGY,13
+Metric,HWThread 7,
+Runtime (RDTSC) [s],0.0176,
+Runtime unhalted [s],0.0203,
+Clock [MHz],3998.0786,
+CPI,0.3356,
+Temperature [C],55,
+Energy [J],0.4421,
+Power [W],25.0706,
+Energy PP0 [J],0.4100,
+Power PP0 [W],23.2502,
+Energy PP1 [J],0,
+Power PP1 [W],0,
+Energy DRAM [J],0.0180,
+Power DRAM [W],1.0210,
+STRUCT,Info,3
+CPU name:,Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz,
+CPU type:,Intel Skylake processor,
+CPU clock:,3.407959894 GHz,
+TABLE,Region EG,Group 1 Raw,ENERGY,8
+Region Info,HWThread 7,
+RDTSC Runtime [s],0.000001,
+call count,1,
+Event,Counter,HWThread 7
+INSTR_RETIRED_ANY,FIXC0,10048
+CPU_CLK_UNHALTED_CORE,FIXC1,14356
+CPU_CLK_UNHALTED_REF,FIXC2,12780
+TEMP_CORE,TMP0,56
+PWR_PKG_ENERGY,PWR0,0
+PWR_PP0_ENERGY,PWR1,0.0027
+PWR_PP1_ENERGY,PWR2,0
+PWR_DRAM_ENERGY,PWR3,0
+TABLE,Region EG,Group 1 Metric,ENERGY,13
+Metric,HWThread 7,
+Runtime (RDTSC) [s],1.153167e-06,
+Runtime unhalted [s],4.212491e-06,
+Clock [MHz],3828.2216,
+CPI,1.4287,
+Temperature [C],56,
+Energy [J],0,
+Power [W],0,
+Energy PP0 [J],0.0027,
+Power PP0 [W],2381.7730,
+Energy PP1 [J],0,
+Power PP1 [W],0,
+Energy DRAM [J],0,
+Power DRAM [W],0,
+# Fim da execução para K=50000, N=10

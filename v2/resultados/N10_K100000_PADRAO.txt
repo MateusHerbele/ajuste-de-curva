@@ -1,0 +1,4 @@
+# Executando para K=100000, N=10
+Running without Marker API. Activate Marker API with -m on commandline.
+Tempos(K, tSL, tEG):100000 3.4836855001e+01 1.9720001146e-03
+# Fim da execução para K=100000, N=10
