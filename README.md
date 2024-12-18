@@ -2,6 +2,7 @@
 EP 03 Computação Científica 
 
 # Arquitetura: 
+```
 --------------------------------------------------------------------------------
 CPU name:       Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
 CPU type:       Intel Skylake processor
@@ -90,7 +91,7 @@ Socket 0:
 | |                   8 MB                  | |
 | +-----------------------------------------+ |
 +---------------------------------------------+
-
+```
 ## Linha do tempo das tomadas de decisão ao longo do trabalho:
 
 # Primeiro teste feito
