@@ -1,7 +1,3 @@
-# Aluno
-Mateus dos Santos Herbele
-GRR: 20221254
-
 # ajuste-de-curva
 EP 03 Computação Científica 
 
